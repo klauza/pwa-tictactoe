@@ -1,4 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Main from './components/Main';
+import About from './components/About';
+import Navigation from './components/Navigation';
 
 interface AppProps {
 
@@ -22,9 +26,13 @@ const App: React.FC<AppProps> = props => {
   
 
   return (
-    <div>
-      Hello {name}
-    </div>
+      <BrowserRouter>
+        <Navigation />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+      </BrowserRouter>
   );
 }
 
