@@ -20,7 +20,8 @@
 
 **Credits**
 
-- icon made by: <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+- icon made by: <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> - <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+- background by: <a href="https://www.freepik.com/free-photos-vectors/background">vector_corp</a> - <a href="https://www.flaticon.com/" title="Freepik">www.freepik.com</a>
 
 **Live website**
 You can find a live website of this project under **[This](https://pwa-tictactoe-klauza.netlify.com/)** link
