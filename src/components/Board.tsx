@@ -6,7 +6,7 @@ import Square from './Square';
 const Board: React.FC = () => {
 
   const [boardSquares, setBoardSquares] = useState(Array(9).fill(null));
-  const [xIsNext, setXIsNext] = useState(true);
+  const [xIsNext, setXIsNext] = useState<boolean>(true);
   let status;
   const winner = calculateWinner(boardSquares);
 
@@ -28,10 +28,10 @@ const Board: React.FC = () => {
   }
 
   const renderSquare = (index: number) => {
-    return <Square value={boardSquares[index]} onClick={() => handleClick(index)} />
+    return <Square value={boardSquares[index]} handleClick={() => handleClick(index)} />
   }
 
-function calculateWinner(squares: any) {
+function calculateWinner(squares: Array<number>) {
     const winningLanes = [
       [0, 1, 2],
       [3, 4, 5],

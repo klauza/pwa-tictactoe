@@ -8,12 +8,13 @@ const SquareButton = styled.button`
 
 export interface SquareProps {
   value: number,
-  onClick: Function
+  handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+  // handleClick: Function
 } 
 
-const Square: React.FC<SquareProps> = (props: any) => {
+const Square: React.FC<SquareProps> = (props: SquareProps) => {
   return (
-    <SquareButton onClick={props.onClick}> 
+    <SquareButton onClick={props.handleClick}> 
       {props.value}
     </SquareButton>
   )
