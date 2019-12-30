@@ -2,7 +2,7 @@
 
 **Tic-tac-toe is an app with implemented Progressive Web App feature along with TypeScript**
 
----
+<br/>
 
 ## More info
 
@@ -21,3 +21,6 @@
 **Credits**
 
 - icon made by: <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+**Live website**
+You can find a live website of this project under **[This](https://pwa-tictactoe-klauza.netlify.com/)** link
