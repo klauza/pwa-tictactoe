@@ -1,7 +1,19 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
 import Square from './Square';
 
 
+const Container = styled.div`
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 50px);
+  .board{
+
+    &-row{
+      display: block;
+    }
+  }
+`;
 
 const Board: React.FC = () => {
 
@@ -53,12 +65,14 @@ function calculateWinner(squares: Array<number>) {
   };
 
   return (
-    <div>
-      <div>{status}</div>
-      <div>{renderSquare(0)} {renderSquare(1)} {renderSquare(2)}</div>
-      <div>{renderSquare(3)} {renderSquare(4)} {renderSquare(5)}</div>
-      <div>{renderSquare(6)} {renderSquare(7)} {renderSquare(8)}</div>
-    </div>
+    <Container>
+      <div className="board">
+        <div>{status}</div>
+        <div className="board-row">{renderSquare(0)} {renderSquare(1)} {renderSquare(2)}</div>
+        <div className="board-row">{renderSquare(3)} {renderSquare(4)} {renderSquare(5)}</div>
+        <div className="board-row">{renderSquare(6)} {renderSquare(7)} {renderSquare(8)}</div>
+      </div>
+    </Container>
   )
 }
 
