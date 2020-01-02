@@ -21,7 +21,7 @@ export interface SquareProps {
 
 const Square: React.FC<SquareProps> = (props: SquareProps) => {
   return (
-    <SquareButton onClick={props.handleClick}> 
+    <SquareButton onClick={props.handleClick} aria-label="square-btn"> 
       <span>{props.value}</span>
     </SquareButton>
   )
