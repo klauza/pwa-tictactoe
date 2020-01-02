@@ -2,7 +2,9 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
 
 workbox.routing.registerRoute(
   new RegExp('https:.*min\.(css|js)'),
-  workbox.strategies.staleWhileRevalidate()
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'cache'
+  })
 )
 
 self.addEventListener('install', event => {
@@ -13,6 +15,6 @@ self.addEventListener('install', event => {
   event.waitUntil(asyncInstall)
 })
 self.addEventListener('activate', event => {
-  console.log('activate')
+  console.log('service worker has been activated')
 })
 
