@@ -1,6 +1,6 @@
 {
-  "short_name": "pwa-tictactoe",
-  "name": "Play tictactoe from your home screen",
+  "short_name": "TicTacToe",
+  "name": "Play pwa tictactoe",
   "icons": [
     {
       "src": "favicon.ico",
